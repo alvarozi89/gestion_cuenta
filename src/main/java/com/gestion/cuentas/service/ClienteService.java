@@ -14,6 +14,6 @@ public class ClienteService {
     private RestTemplate restTemplate;
 
     public Cliente obtenerClientePorId(Long clienteId) {
-        return restTemplate.getForObject("http://localhost:8080/api/clientes/" + clienteId, Cliente.class);
+        return restTemplate.getForObject("gestioncliente-production.up.railway.app/api/clientes/" + clienteId, Cliente.class);
     }
 }
